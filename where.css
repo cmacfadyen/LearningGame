@@ -1,0 +1,23 @@
+h2{
+  font-family: sans-serif;
+  font-size: 36pt;
+}
+
+object{
+  opacity: 0.25;
+}
+
+img{
+  max-width: 30%;
+  max-height: 90%;
+}
+
+.light{
+  opacity: 0.25;
+}
+
+#score{
+  font-family:monospace;
+  font-size: 24pt;
+  position: abolute;
+}
