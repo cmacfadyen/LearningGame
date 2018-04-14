@@ -56,6 +56,10 @@ box-shadow: 0 4px 8px rgba(0,0,0,0.5);
   bottom:10px;
   right:10px;
 }
+#unlockMap:hover{
+  font-weight: bolder;
+  cursor:pointer;
+}
 #mapHolder{
   display:none;
   width:320px;
