@@ -1,0 +1,53 @@
+<html>
+<head>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' type = 'text/css' href='gbstyle.css'>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+  <script src="../github/findme/jquery-3.3.1.js"></script>
+  <title>
+    To an equation
+  </title>
+</head>
+<body>
+
+
+
+<div id='algebra'></div>
+<script>
+
+var steps = [ 'Welcome to algebra.  Fear not!',
+              '',
+              '(5x-3)/2 = 26         ',
+              'means you start at x  ',
+              '  x      = ?          ',
+              'and you "walk away" from it',
+              ' 5x      = ?          ',
+              ' 5x-3    = ?          ',
+              '(5x-3)/2 = ?          ',
+              '(5x-3)/2 = 26         ',
+              "You arrive at 26.  How do you get back?"
+              ];
+
+var step=0;
+  setInterval(function(){
+      if(step<steps.length){
+      console.log(step +' '+steps[step]);
+      document.getElementById('algebra').innerHTML+=steps[step]+'<br>';
+      step++;
+    }
+    else if(step = steps.length){
+      clearInterval();
+      setTimeout(function(){
+        $('#algebra').fadeOut();
+        window.location.href='equationsolve.html';
+      },1000);
+    }
+    else{
+      clearInterval();
+    }
+  },2000);
+
+</script>
+
+</body>
+</html>

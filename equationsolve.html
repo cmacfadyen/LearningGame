@@ -1,0 +1,55 @@
+<html>
+<head>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' type = 'text/css' href='gbstyle.css'>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+  <script src="../github/findme/jquery-3.3.1.js"></script>
+  <title>
+    Hansel and Gretel
+  </title>
+</head>
+<body>
+
+
+
+<div id='algebra'></div>
+<div class='gen' id='mapshot'><img src='images/mapshot.png' width = '200px'></div>
+<div class='gen' id='hansel'><img src ='images/hansel.jpg' width = '200px'></div>
+<script>
+
+var steps = [
+              "      You're at 26      ",
+              "Just as south undoes north ",
+              "Multiply by 2 undoes divide by 2",
+              '   (5x-3)/2 = 26       ',
+              '     (5x-3) = 26*2     ',
+              '      5x-3  = 52       ',
+              'Add 3 undoes subtract 3 ',
+              '      5x = 52+3        ',
+              '      5x = 55          ',
+              'Divide by 5 undoes multiply by 5',
+              '       x = 55/5        ',
+              '       x = 11          ',
+            '',
+              ' You made it back home '];
+
+var step=0;
+  setInterval(function(){
+      if(step<steps.length){
+      console.log(step +' '+steps[step]);
+      document.getElementById('algebra').innerHTML+=steps[step]+'<br>';
+      step++;
+    }
+    else if(step = steps.length){
+      $('#mapshot').css('display','block');
+      $('#hansel').css('display','block');
+    }
+    else{
+      clearInterval();
+    }
+  },2000);
+
+</script>
+
+</body>
+</html>

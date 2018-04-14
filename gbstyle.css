@@ -1,0 +1,88 @@
+body{
+  background-image: url('images/sand2.jpg');
+  background-repeat: repeat;
+  font-size: 24pt;
+  font-family:cursive;
+/*  font-family: 'Catamaran', sans-serif;*/
+  font-color: black;
+  text-shadow: 2px 2px #A9A9A9;
+  text-align: center;
+}
+a:hover{
+  font-weight: bolder;
+  cursor:pointer;
+}
+.gen{
+  text-align: center;
+  display:none;
+}
+button{
+  font-size: 18pt;
+  background-color: black;
+  color: white;
+}
+#mapshot{
+  position:fixed;
+  left:5px;
+  top:5px;
+  -moz-box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  -webkit-transition: all 0.5s ease;
+}
+#hansel{
+position:fixed;
+right:5px;
+top:5px;
+-moz-box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+-webkit-transition: all 0.5s ease;
+}
+#algebra{
+  font-family:monospace;
+  font-size: 24pt;
+  white-space: pre;
+}
+
+#popMap{
+  position:absolute;
+  bottom:10px;
+  left:10px;
+}
+
+#unlockMap{
+  position:absolute;
+  bottom:10px;
+  right:10px;
+}
+#mapHolder{
+  display:none;
+  width:320px;
+  height:320px;
+  position:absolute;
+  bottom:10px;
+  left:10px;
+  border-color: #704214;
+  border-style:ridge;
+  -moz-box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  -webkit-transition: all 0.5s ease;
+  }
+
+/*
+#mapHolder:hover{
+  transform-origin: bottom left;
+  -webkit-transform: scale(4);
+  -moz-transform: scale(4);
+  -o-transform: scale(4);
+  -ms-transform: scale(4);
+
+}
+*/
+#startButton{
+position:absolute;
+right: 20px;
+top:200px;
+}
